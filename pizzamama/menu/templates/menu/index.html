@@ -1,4 +1,31 @@
+{% load static %}
 <html lang="fr">
-    <head>
+    <head> 
+        <meta charset="UTF-8">
+        <title> Menu des pizzas </title>
+        <link rel="stylesheet" href="{% static 'menu/style.css'%}">
+    </head> 
+    <body>
+        <img id="small_logo" src="{% static 'menu/images/small_logoz.png'%}">
+        <div class="menu_titel">
+            <h1> Les pizzas </h1>
+        </div>
+        <div class="menu_list">
+            {% for pizza in pizzas %}
+                <div class="menu_item">
+                    <span class="menu_item_titel">{{pizza.nom}} </span><span class="menu_item_price"> {{pizza.prix | floatformat:2}}Dz</span>
+                </div>
+                <div>
+                    <span class="menu_item_ing">{{pizza.ingredients}}</span>
+                    {% if pizza.vegetarienne == 1 %}
+                    <br>
+                    <span class="menu_item_vegi">VEGETARIENNE</span>
+                    {% endif%}
+                </div>
+            {% endfor %}
+
+        </div>
+    </body>
+</html>
 
 
