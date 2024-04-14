@@ -1,7 +1,7 @@
 
 
 body {
-    background: url("images/menu_background.jpg") no-repeat center center fixed; 
+    background: linear-gradient(0deg, rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("images/menu_background.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -43,7 +43,7 @@ h1 {
     font-weight: bold;
     font-size: 20px;
     display: inline-block;
-    width: 300px;
+    width: 500px;
  
 
 }
@@ -59,6 +59,8 @@ h1 {
 .menu_item_ing {
     font-size: 14px;
     color: #C8C8C8;
+    width: 300px;
+    display: inline-block;
 }
 .menu_item_vegi {
     display:inline-block;
