@@ -7,6 +7,7 @@ body {
     color: white;
     margin: 0px;
     font-family: Arial;
+    display: block;
 }
 #small_logo {
     display: block;
@@ -15,11 +16,12 @@ body {
     margin-top:220px;
 
 }
-.menu_link {
+a.menu_link {
+    display: block;
+    
     text-align: center;
     color: red;
     text-decoration-line: underline;
     margin-top: 50px;
-    font-size: 18px;
-
+    font-size: 20px;
 }

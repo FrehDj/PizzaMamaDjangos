@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-812p3-_ux*djxw!poz)f8(v9#(0=0)q0bh88z774wga%-y8l#4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1","localhost","FrehDJ.pythonanywhere.com"]
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'menu.apps.MenuConfig',
-    'main.apps.MainConfig',
+    'main.apps.MainConfig'
 ]
 
 MIDDLEWARE = [
@@ -124,3 +124,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
