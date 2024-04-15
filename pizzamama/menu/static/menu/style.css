@@ -22,7 +22,7 @@ h1 {
     background-color: #DD7835;
     display: inline;
     padding: 8px 22px;
-
+    border-radius: 0px 25px 10px 0px;
 }
 .menu_titel {
     font-size: 22px;

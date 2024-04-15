@@ -1,0 +1,18 @@
+{% load static %}
+<html lang="fr">
+    <head> 
+        <meta charset="UTF-8">
+        <title> Main </title>
+        <link rel="stylesheet" href="{% static 'main/style.css'%}">
+    </head> 
+    <body>
+        
+        <img id="small_logo" src="{% static 'main/images/main_logo.png'%}">
+            <div class="menu_link">
+                <a href="{% url 'menu:index'%}">Voir le menu</a>
+
+                </div>
+        
+    </body>
+
+</html>
